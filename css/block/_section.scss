@@ -1,0 +1,11 @@
+.section {
+  padding: 8rem 0;
+
+  &--gray {
+    background: #e8e8e8;
+  }
+
+  @media #{$mobile} {
+    padding: 3rem 0;
+  }
+}

@@ -1,0 +1,85 @@
+.btn {
+  display: inline-block;
+
+  min-width: 130px;
+  padding: 1.5rem 2rem;
+  margin: 0 auto;
+
+
+  border: none;
+  border-radius: 1.8em;
+  background-color: $blue;
+  cursor: pointer;
+  color: $white;
+
+
+  font-family: inherit;
+  font-size: 1.6rem;
+
+  text-align: center;
+  text-decoration: none;
+
+
+  transition: background-color .2s linear;
+
+  &:hover {
+    background-color: darken($blue, 15%);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &--video {
+    min-width: 200px;
+    margin-bottom: 6.6rem;
+
+    color: $black;
+    border: 1px solid $gray;
+    background-color: transparent;
+
+    transition: background-color .2s linear;
+
+    &:hover {
+      background-color: $darkgray;
+    }
+
+    @media #{$tablet} {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &--sm {
+    margin-left: 2.5rem;
+    color: $black;
+    border: 1px solid $gray;
+    background-color: transparent;
+
+    transition: background-color .2s linear;
+
+    &:hover {
+      background-color: $darkgray;
+    }
+  }
+
+  &--green {
+    position: absolute;
+
+    background-color: $green;
+
+    &:hover {
+      background-color: darken($green, 15%);
+    }
+
+    @media #{$mobile} {
+      display: block;
+      position: relative;
+    }
+  }
+
+  &--blue {
+    margin-top: 5rem;
+  }
+}
+
+

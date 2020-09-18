@@ -1,0 +1,45 @@
+.copyright {
+  padding-top: 4rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-top: 1px solid #f4f4f4;
+
+  @media #{$notebook} {
+    padding: 2rem 3rem;
+  }
+
+  @media #{$mobile} {
+    display: block;
+
+    padding: 1rem 3rem;
+    margin: 0;
+  }
+}
+
+.copyright__text {
+  text-align: left;
+  font-size: 1.4rem;
+  color: $darkgray;
+
+  @media #{$mobile} {
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+  }
+}
+
+.copyright__logo {
+  display: flex;
+  align-items: center;
+
+  font-size: .9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.copyright__author {
+  margin-left: 1rem;
+}

@@ -1,0 +1,44 @@
+.sidebar {
+  position: fixed;
+  width: 200px;
+  height: 100%;
+
+  padding: 5rem 1rem;
+
+  top: 0;
+  left: -200px;
+  z-index: 1;
+
+  background: #c2c2c2;
+
+  transition: left .3s linear;
+
+  @media #{$mobile} {
+    width: 150px;
+  }
+}
+
+.sidebar.show,{
+  left: 0;
+}
+
+.sidebar__close {
+  display: none;
+
+  @media #{$tablet} {
+    position: absolute;
+    display: block;
+    width: 34px;
+    height: 39px;
+
+    top: 5px;
+    right: 20px;
+
+    border: 0;
+    background: none;
+    
+    cursor: pointer;
+  }
+}
+
+

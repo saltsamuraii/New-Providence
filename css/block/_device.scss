@@ -1,0 +1,19 @@
+.device {
+  display: flex;
+  width: 100%;
+  height: 460px;
+
+  flex-direction: column;
+  align-items: center;
+
+  @media #{$mobile} {
+    height: 320px;
+  }
+}
+
+.device__photo {
+  @media #{$mobile}  {
+    width: 280px;
+  }
+}
+

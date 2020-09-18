@@ -1,0 +1,86 @@
+.interface {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.interface__inner {
+  width: 100%;
+
+  text-align: center;
+}
+
+.interface__header {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 4rem;
+
+  color: $black;
+
+  &:after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+
+    margin: 5rem auto;
+
+    background-color: $blue;
+  }
+
+  @media #{$mobile} {
+    font-size: 2.5rem;
+  }
+}
+
+.interface__title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $darkgray;
+}
+
+.interface__screens {
+  margin-top: 5rem;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.interface__item {
+  position: relative;
+
+  width: 320px;
+  margin: 0 1rem;
+
+  top: 92px;
+
+  @media #{$mobile} {
+    margin: 0 auto;
+    top: 80px;
+  }
+
+  &--main {
+    width: 395px;
+    margin: 0;
+    top: 0;
+  }
+}
+
+
+.interface__photo {
+  min-width: 100%;
+
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  @media #{$mobile} {
+    width: 220px;
+  }
+
+  &--middle {
+    @media #{$mobile} {
+      width: 295px;
+    }
+  }
+}

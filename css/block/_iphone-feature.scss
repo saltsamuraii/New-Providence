@@ -1,0 +1,70 @@
+.iphone-feature {
+  padding: 0 3rem;
+  display: flex;
+  position: relative;
+
+  @media #{$tablet} {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+}
+
+
+.iphone-feature-left {
+  position: absolute;
+
+  right: 47%;
+  top: 0;
+
+  @media #{$tablet} {
+    position: relative;
+    margin-top: 5rem;
+
+    left: 0;
+  }
+}
+
+.iphone__photo {
+  @media #{$tablet} {
+    width: 100%;
+  }
+}
+
+.iphone-feature-right {
+  margin-top: 10%;
+  margin-left: 60%;
+
+  @media #{$tablet} {
+    margin: 0 3rem;
+    position: relative;
+  }
+}
+
+.iphone-feature__title {
+  margin-bottom: 8rem;
+  padding: 0 2rem;
+
+  font-family: 'Varela Round', sans-serif;
+  font-weight: 400;
+  font-size: 4.2rem;
+
+  @media #{$tablet} {
+    margin-bottom: 3rem;
+    padding: 0;
+  }
+
+  @media #{$mobile} {
+    font-size: 2.5rem;
+  }
+}
+
+.iphone-feature__text {
+  margin-bottom: 8rem;
+
+  font-size: 2rem;
+  color: $gray;
+
+  @media #{$mobile} {
+    font-size: 1.2rem;
+  }
+}

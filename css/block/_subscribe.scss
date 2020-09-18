@@ -1,0 +1,31 @@
+.subscribe {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.subscribe__title {
+  margin-bottom: 4rem;
+
+  font-size: 4.2rem;
+  font-family: 'Varela Round', sans-serif;
+
+  color: $black;
+
+  @media #{$mobile} {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.subscribe__subtitle {
+  font-size: 1.4rem;
+
+  color: $darkgray;
+
+  @media #{$mobile} {
+    font-size: 1.2rem;
+  }
+}

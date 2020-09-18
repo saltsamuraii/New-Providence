@@ -1,0 +1,39 @@
+.nav-left,
+.nav-right {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+
+  margin: 0 auto;
+
+  @media #{$tablet} {
+    display: none;
+  }
+}
+
+
+.nav__link {
+  padding: 0 4rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+
+  text-decoration: none;
+  color: $black;
+
+  transition: color .2s linear;
+
+  &:hover {
+    color: $blue;
+  }
+
+  @media #{$notebook} {
+    margin: 0;
+    padding: .5rem 2rem;
+  }
+
+  @media #{$tablet} {
+    display: block;
+    padding: 2rem 0;
+  }
+}

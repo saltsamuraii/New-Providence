@@ -1,0 +1,104 @@
+.map-feature {
+  margin-top: 27rem;
+  padding: 0 3rem;
+  display: flex;
+  position: relative;
+
+  @media #{$tablet} {
+    margin-top: 0;
+    flex-direction: column;
+  }
+}
+
+.map-feature-left {
+  margin-right: 60%;
+
+  @media #{$tablet} {
+    position: relative;
+    margin: 0;
+  }
+}
+
+.map-feature__title {
+  margin-bottom: 8rem;
+
+  font-family: 'Varela Round', sans-serif;
+  font-weight: 400;
+  font-size: 4.2rem;
+
+  @media #{$tablet} {
+    margin-bottom: 4rem;
+  }
+
+  @media #{$mobile} {
+    font-size: 2.5rem;
+  }
+}
+
+.map-feature__text {
+  margin-bottom: 7rem;
+
+  font-size: 2rem;
+  color: $gray;
+
+  @media #{$tablet} {
+    margin-bottom: 4rem;
+  }
+
+  @media #{$mobile} {
+    font-size: 1.2rem;
+  }
+}
+
+.map-feature__partners {
+  margin-bottom: 3.5rem;
+
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: inherit;
+
+  color: $black;
+  text-transform: uppercase;
+
+  @media #{$tablet} {
+    margin-bottom: 2rem;
+  }
+}
+
+.map-feature__dropbox,
+.map-feature__evernote {
+  margin-right: 1rem;
+  text-decoration: none;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.map-feature__dropbox__img,
+.map-feature__evernote__img {
+  width: 100px;
+}
+
+.map-feature-right {
+  position: absolute;
+
+  left: 50%;
+  top: 0;
+
+  z-index: 1;
+
+  @media #{$tablet} {
+    position: relative;
+    margin-top: 3rem;
+
+    left: 0;
+  }
+}
+
+.map-feature__photo {
+  @media #{$tablet} {
+    width: 100%;
+  }
+}
+
